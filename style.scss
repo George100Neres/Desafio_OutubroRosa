@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Noto Sans", sans-serif;
+    cursor: url('./Imgs/cursor11.cur'), auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #E4EEF1;
+    background-color: #FF69B4;
+    font-size: 2vh;
+    font-weight: normal;
+    align-items: center;    
+}
+
+/* Header da secao*/
+
+
+nav {
+    border: solid;
+    width: 95%;
+}
+
+a {
+     color: #E4EEF1;
+     font-size: 28px;
+}
+/* */
+ul {
+    display: flex;
+    //border: solid red;
+    justify-content: space-around;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFD9EC;
+}
+
+/* Backgorund da classe sessaoAlerta*/
+.sessaoAlerta {
+    //border: solid red 5px;
+    background-color: #FFD9EC;
+    display: flex;
+    // vh - Viewport height
+    width: 100%;
+    height: 45vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+   .Text1 {
+    font-size: 2.5vh;
+    width: 24vw;
+   } 
+
+   .ImagemCampanha {
+     height: 40vh;
+   }
+/* Tamamnho das imagen da calsse .sessaoAlerta*/
+    p {
+        width: 40%;
+        font-size: 25px;
+    }
+
+    img {
+        width: 19.010416666666668vw;
+    }
+}
+/* Backgorund da classe sessaoCorrida*/
+.sessaoCorrida {
+    background-color: #FF69B4;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 35vh;
+
+.SegundaImagem {
+    height: 30vh;
+}
+
+.Text2 {
+    color: #E4EEF1;
+    font-size: 2.5vh;
+    width: 30vw;
+}
+
+.sessaoDicas {
+    height: 50vh;
+    background-color: red;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+img {
+  width: 20%;
+}
+/* Tamamnho das imagen da calsse .sessaoCorrida*/
+    p {
+        width: 55%;
+        font-size: 25px;
+        color: #E4EEE1;
+    }
+}
+/*
+.tips {
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffdee7;
+    padding: 20px;
+
+}*/
+
+
+/* ROdape do site*/
+
+
+footer {
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 15vh;
+
+    .media-social {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 10vw;
+    }
+}
+
+
+/* responsividade */ 
+@media (max-width: 768px) {
+    header {
+        height: 20vh;
+        flex-direction: column;
+
+        nav {
+            border: solid red;
+            width: 95%;
+        }
+        /* No dispositivo mobile */
+        .sessaoAlerta {
+            height: 80vh;
+            flex-direction: column-reverse;
+
+            p {
+                width: 90%;
+                font-size: 22px;
+                text-align: center;
+            }
+            
+            img {
+                width: 40;
+            }
+            .sessaoCorrida {
+                height: 80vh;
+                flex-direction: column;
+            }
+
+            .sessaoDicas {
+                flex-direction: column;
+                height: 70vh;
+            }
+
+            img {
+                height: 15vh;
+            }
+            p {
+                width: 90%;
+                font-size: 22px;
+                text-align: center;
+            }
+        }
+    }
+}
